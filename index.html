@@ -16,10 +16,12 @@ p {
 
 <script>
 // Set the date we're counting down to
-// userPrompt = prompt("Input date in 'Mar 31, 2023 23:59:59' ")
-// .Number(userPrompt)
+userPrompt = prompt("Input date in following format: " + "April 1 2023")
 
-var countDownDate = new Date("Mar 31, 2023 23:59:59").getTime();
+
+var countDownDate = new Date(userPrompt + " " + "23:59:59").getTime();
+
+console.log(countDownDate);
 
 // Update the count down every 1 second
 var x = setInterval(function() {
